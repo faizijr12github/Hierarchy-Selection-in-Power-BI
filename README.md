@@ -1,127 +1,148 @@
-📊 Hierarchy Selection in Power BI (Matrix + Field Parameters)
+# Hierarchy Selection in Power BI — Matrix + Field Parameters
 
-📖 Overview
+> *Empowering users to build their own hierarchies on the fly — no predefined drill-paths required.*
 
-This project demonstrates an advanced and dynamic reporting technique in Power BI called Hierarchy Selection, implemented using the Matrix Visual and Field Parameters.
+---
 
-The solution enables users to dynamically control dimensions and create hierarchical views directly from slicers, enhancing flexibility and interactivity in data analysis.
+## Overview
 
-🎯 Objectives
+This project demonstrates an advanced and dynamic reporting technique in Power BI called **Hierarchy Selection**, implemented using the **Matrix Visual** and **Field Parameters**.
 
-Learn and implement Field Parameters in Power BI
+The solution enables users to **dynamically control dimensions** and create hierarchical views directly from slicers — enhancing flexibility and interactivity in data analysis without the need for multiple pages or visuals.
 
-Use Matrix Visual for hierarchical data representation
+---
 
-Enable dynamic dimension switching
+## Objectives
 
-Build interactive and flexible reporting experience
+-  Learn and implement **Field Parameters** in Power BI
+-  Use the **Matrix Visual** for hierarchical data representation
+-  Enable **dynamic dimension switching** via slicers
+-  Build an **interactive and flexible** reporting experience
 
-🛠️ Tools & Technologies
+---
 
-Power BI
+##  Tools & Technologies
 
-Matrix Visual
+| Tool / Technology | Purpose |
+|---|---|
+| **Power BI Desktop** | Report development and design |
+| **Matrix Visual** | Hierarchical data display with rows and values |
+| **Field Parameters** | Dynamic dimension control |
+| **Slicers** | User-driven dimension selection |
+| **DAX** | Supporting measures and parameter logic |
 
-Field Parameters
+---
 
-Slicers
+##  Key Features
 
-DAX
+###  1. Dynamic Dimension Selection
+- **Field Parameters** created using multiple dimensions
+- Parameter options exposed through a **Slicer**
+- Users select any dimension — the Matrix responds instantly
 
-🚀 Key Features
-🔹 1. Dynamic Dimension Selection
+>  The report adapts to the user, not the other way around.
 
-Created Field Parameters using multiple dimensions
+---
 
-Displayed parameter options in a Slicer
+###  2. Interactive Matrix Visual
+- Selected dimensions are placed in the **Rows** of the Matrix
+- Measures are added to the **Values** section
+- Produces a structured, readable, and navigable data layout
 
-Users can dynamically select dimensions
+>  Enables deep and flexible data exploration in a single visual.
 
-➡️ Matrix updates instantly based on slicer selection
+---
 
-🔹 2. Interactive Matrix Visual
+###  3. Dynamic Column Behavior
+- Matrix structure **changes automatically** based on user input
+- Columns and groupings adjust without any manual reconfiguration
 
-Selected dimensions are placed in Rows of Matrix
+>  Delivers a responsive and truly adaptive report design.
 
-Measures are added in Values section
+---
 
-Provides a structured and readable data layout
+###  4. Hierarchy Building via Multi-Selection
+Users can select **multiple dimensions simultaneously** in the slicer — the Matrix automatically constructs a **drill-down hierarchy**:
 
-➡️ Enables deep and flexible data exploration
-
-🔹 3. Dynamic Column Behavior
-
-Matrix structure changes dynamically based on user input
-
-Columns and grouping adjust automatically
-
-➡️ Delivers a responsive and adaptive report design
-
-🔹 4. Hierarchy Building (Multi-Selection)
-
-Users can select multiple dimensions in slicer
-
-Matrix automatically creates a hierarchical structure
-
-Example:
-
+```
 Category → Subcategory → Product
+```
 
-➡️ Allows drill-down style analysis without predefined hierarchy
+No predefined hierarchy needed — it's built at runtime by the user.
 
-🔹 5. User-Friendly Experience
+> Enables drill-down style analysis with complete user control.
 
-No need for multiple visuals or pages
+---
 
-Single matrix handles multiple views
+### 5. User-Friendly Single-Visual Design
+- No need for multiple report pages or visuals
+- One Matrix handles an unlimited number of views
+- Clean, efficient, and minimal layout
 
-Clean and efficient layout
+>  Improves usability and overall report performance.
 
-➡️ Improves usability and report performance
+---
 
-💡 Benefits
+## Benefits
 
-📊 Highly flexible reporting
+| Benefit | Description |
+|---|---|
+|  **Flexible Reporting** | Users shape the report to match their analysis needs |
+|  **Reduced Visual Clutter** | Eliminates the need for multiple dedicated visuals |
+|  **Enhanced Analytics** | Self-service hierarchy building without IT involvement |
+|  **Faster Insights** | Fewer clicks to get to the right view |
+|  **User Control** | Full ownership of dimension selection and structure |
 
-🔄 Eliminates need for multiple visuals
+---
 
-🧠 Enhances analytical capabilities
+## Key Learnings
 
-⚡ Faster insights with fewer clicks
+- How to create and configure **Field Parameters** in Power BI
+- Designing **dynamic reports** driven by slicers
+- Building **runtime hierarchies** without predefined drill paths
+- Optimizing reports using the **Matrix Visual**
+- Improving **user interaction and self-service** experience
 
-🎯 Better user control over data
+---
 
-🧠 Key Learnings
-
-How to use Field Parameters in Power BI
-
-Designing dynamic reports using slicers
-
-Building hierarchies dynamically
-
-Optimizing reports using Matrix Visual
-
-Improving user interaction and experience
-
-📂 Use Case
+##  Use Cases
 
 This approach is ideal for:
 
-Business dashboards with multiple dimensions
+-  Business dashboards with **multiple dimensions**
+-  **Self-service BI** reports for non-technical users
+-  Scenarios with **dynamic or frequently changing** reporting requirements
+-  Simplifying complex reports by **reducing visual count**
 
-Self-service BI reports
+---
 
-Dynamic reporting requirements
+##  Outcome
 
-Reducing report complexity
+-  Built a **dynamic hierarchy selection system** using Field Parameters
+-  Enabled **multi-level drill-down analysis** without predefined paths
+-  Created a **smart, scalable, and reusable** reporting solution
 
-💡 Outcome
+---
 
-Built a dynamic hierarchy selection system
+##  Preview
 
-Enabled multi-level drill-down analysis
+![Hierarchy Selection in Power BI](https://github.com/user-attachments/assets/a8a76018-b9bc-48b1-ad89-ab880d2a259f)
 
-Created a smart and scalable reporting solution
+*Users select dimensions from the slicer — the Matrix builds the hierarchy automatically in real time.*
 
-📷 Task View
-<img width="1124" height="625" alt="Screenshot 2026-03-18 104409" src="https://github.com/user-attachments/assets/a8a76018-b9bc-48b1-ad89-ab880d2a259f" />
+---
+
+##  Project Structure
+
+```
+ hierarchy-selection-powerbi
+ ┣  PowerBI_HierarchySelection.pbix   # Main Power BI report file
+ ┣  screenshots/                       # Preview images
+ ┗  README.md                          # Project documentation
+```
+
+---
+
+##  Connect
+
+If you found this project useful or have suggestions, feel free to open an **Issue** or submit a **Pull Request**.
